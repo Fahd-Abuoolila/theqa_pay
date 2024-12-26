@@ -1,0 +1,101 @@
+div#menu{
+    position: fixed;
+    height: 100vh;
+    width: 240px;
+    background-color: var(--main_3_color) !important;
+    right: -240px;
+    top: 0;
+    overflow-x: hidden;
+    z-index: 9999999;
+    transition: all .5s;
+}
+
+div#menu.active{
+    right: 0;
+}
+
+div#menu > div.Menu_Close{
+    display: inline-block;
+    font-size: x-large;
+    position: relative;
+    top: 5px;
+    left: 15px;
+}
+
+div#menu > .Parts_Link > #navbar div.L_Img{
+    margin: 0;
+}
+
+div#menu > .Parts_Link > #navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 30px 0 30px 0;
+}
+
+div#menu > .Parts_Link > #navbar li > a{
+    width: 200px;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 12px;
+    border-radius: 8px;
+    background: #c9ced3;
+    transition: .3s;
+    display: -webkit-inline-box;
+}div#menu .active-menu,div.active > .Parts_Link > #navbar li > a:hover{
+    background: var(--main_1_backcolor) !important;
+    color: #fff !important;
+}
+
+div#menu > .Parts_Link > #navbar li > a > svg{
+    display: block;
+    margin: 3px 0;
+}
+
+div#menu .Parts_Link > #navbar li > a > p{
+    margin: 0 auto;
+}
+
+div#menu > .Parts_Link img.logo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+div#menu > .Parts_Link img.logo + h2{
+    font-size: revert;
+}
+
+
+div#menu > .Additions_Link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#2165ae, #143d69);
+}
+
+div#menu > .Additions_Link > ul{
+    margin: 0;
+    padding: 0;
+}
+
+div#menu > .Additions_Link > ul > li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+div#menu > .Additions_Link > ul > li > a:hover{
+    letter-spacing: 3px;
+}
